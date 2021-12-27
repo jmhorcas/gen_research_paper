@@ -25,7 +25,9 @@ def _create_directories(path: str) -> None:
 
 
 def gen_folder_structure() -> None:
-    shutil.rmtree(MAIN_DIR)
+    if os.path.exists(MAIN_DIR):
+        shutil.rmtree(MAIN_DIR)
+        
     for folder in FOLDERS:
         dir = os.path.join(MAIN_DIR, folder)
         _create_directories(dir)
