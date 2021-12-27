@@ -1,5 +1,5 @@
 def gen_introduction() -> str:
-    content = r'''
+    return r'''
 % Background / Context
 
 % Problem statement and motivation
@@ -26,4 +26,3 @@ Section~\ref{{sec:evaluation}} evaluates our approach.
 Section~\ref{{sec:relatedwork}} presents related work.
 Section~\ref{{sec:conclusions}} concludes the paper.
 '''
-    return content
